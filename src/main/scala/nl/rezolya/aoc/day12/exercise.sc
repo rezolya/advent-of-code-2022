@@ -72,3 +72,5 @@ def canGoDown(current: Position, target: Position): Boolean = {
 }
 
 val result2 = recurse(Queue(end), fromEndToA, position => landscape(position.row)(position.column) == 'a', canGoDown)
+
+bufferedSource.close()
